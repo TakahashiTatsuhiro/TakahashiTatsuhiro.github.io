@@ -60,8 +60,8 @@ function game(pChoice) {
 * @return {boolean} result - 成立ならtrue、そうでないならfalse
 */
 function judgeMoney() {
-    const own = document.getElementById("money").value;
-    const bet = document.getElementById("bet").value;
+    const own = Number(document.getElementById("money").value);
+    const bet = Number(document.getElementById("bet").value);
     if (bet <= own) {
         return true;
     } else {
@@ -91,13 +91,13 @@ function decideIssue(sec) {
 
     //勝敗を判断
     if (rdm < dic[surplus.toString()]["win"]) {
-        console.log(`${sec}秒`,`剰余${surplus}`,`乱数${rdm}`,`勝ち閾値${dic[surplus.toString()]["win"]}`)
+        console.log(`${sec}秒`, `剰余${surplus}`, `乱数${rdm}`, `勝ち閾値${dic[surplus.toString()]["win"]}`)
         return 0; //勝ちの確率未満なら勝ち
     } else if (rdm < dic[surplus.toString()]["draw"]) {
-        console.log(`${sec}秒`,`剰余${surplus}`,`乱数${rdm}`,`あいこ閾値${dic[surplus.toString()]["draw"]}`)
+        console.log(`${sec}秒`, `剰余${surplus}`, `乱数${rdm}`, `あいこ閾値${dic[surplus.toString()]["draw"]}`)
         return 1; //あいこの確率未満ならあいこ
     } else {
-        console.log(`${sec}秒`,`剰余${surplus}`,`乱数${rdm}`,`負け閾値${dic[surplus.toString()]["lose"]}`)
+        console.log(`${sec}秒`, `剰余${surplus}`, `乱数${rdm}`, `負け閾値${dic[surplus.toString()]["lose"]}`)
         return 2; //残りは負け
     }
 }
@@ -144,8 +144,8 @@ function decideImg(pChoice, issue) {
 * @return {number} なし - なし
 */
 function liquidation(issue) {
-    const own = document.getElementById("money").value;
-    const bet = document.getElementById("bet").value;
+    const own = Number(document.getElementById("money").value);
+    const bet = Number(document.getElementById("bet").value);
 
     if (issue === 0) {
         document.getElementById("money").value = Number(own) + Number(bet);

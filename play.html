@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>勝負だ！</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container clearfix">
+
+        <header>
+            <h1>勝負だ！</h1>
+        </header>
+
+        <div class="control">
+            <label for="money">おこづかい[万円]</label>
+            <input type="text" id="money" name="money" class="textBox" value="100">
+        </div>
+
+        <div class="control">
+            <label for="bet">かけきん　[万円]</label>
+            <input type="text" id="bet" name="bet" class="textBox" value="10">
+        </div>
+
+        <div>
+            <img class="centered-img" id="targetImg" src="imgs/0_ready.JPG" alt="かまえの写真">
+            <p id="time"></p>
+        </div>
+
+        <div class="button-container">
+            <button id="btnGu" class="btn">グー</button>
+            <button id="btnCho" class="btn">チョキ</button>
+            <button id="btnPa" class="btn">パー</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

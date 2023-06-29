@@ -1,0 +1,120 @@
+@import url("sanitize.css");
+
+body {
+    background-color: #f0f0f0;
+    padding: 10px;
+    font-size: 20px;
+    color: #666;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+header {
+    /* background-color: #422814; */
+    background-color: #a7d28d;
+    padding: 10px;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.centered-img {
+    display: block;
+    /*  ↑これがないとセンターにならない */
+    margin: 30px auto;
+}
+
+#linkStart {
+    text-decoration: none;
+}
+
+.btnStart {
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+    height: 50px;
+    background-color: #8cd1b7 ;
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+}
+
+.instraction {
+    color: #666;
+    text-align: center;
+}
+
+
+/* play.html===================== */
+.control {
+    margin: 1em;
+    display: block;
+    margin: 20px auto;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    border: 1px solid #f0f0f0;
+    /*次のborder-bottomの前に線を消しておく*/
+    border-bottom: 1px solid #000;
+    font-size: 1em;
+    width: 20%;
+    padding: 5px;
+}
+
+.textBox {
+    font-size: 20px;
+}
+
+#time {
+    text-align: center;
+    font-size: 24px;
+}
+
+.btn {
+    /* flex-grow: 0; */
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 20%;
+    height: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.clearfix:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+
+#btnGu {
+    background-color: #8cd1b7 ;    
+}
+
+#btnCho {
+    background-color: #b78cd1;
+}
+
+#btnPa{
+    background-color: #d1b78c;
+}
+
+/* .list {
+    width: fit-content;
+    margin: auto;
+} */

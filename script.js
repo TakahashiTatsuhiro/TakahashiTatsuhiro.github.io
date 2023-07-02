@@ -44,7 +44,7 @@ function game(pChoice) {
     liquidation(issue);
 
     //コンティニュー判断
-    if (!canContinue()) {
+    if (!judgeMoney()) {
         newImg = "imgs/gameover.jpg";
     }
 
